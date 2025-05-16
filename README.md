@@ -1,5 +1,3 @@
-# Project-Doktor_Otomasyon_Sistemi
-
 # 🩺 Doktor Otomasyon Sistemi
 
 Bu proje, hastaların çevrim içi ortamda randevu almasını ve doktorların bu randevuları yönetmesini sağlayan bir **web tabanlı otomasyon sistemi**dir. Flask framework'ü ve MySQL veritabanı kullanılarak geliştirilmiştir.
