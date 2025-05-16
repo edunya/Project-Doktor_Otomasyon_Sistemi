@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Randevu Al</title>
+    <link rel="stylesheet" href="/static/randevu_al.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-calendar-plus"></i> Randevu Al</h2>
+        <form action="/randevu_al" method="POST">
+            <label>Doktor Seçin:</label>
+            <select name="doktor_id" required>
+                {% for d in doktorlar %}
+                <option value="{{ d.DoktorID }}">{{ d.Ad }} {{ d.Soyad }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Tarih ve Saat:</label>
+            <input type="datetime-local" name="tarih" required>
+
+            <label>Şikayetiniz:</label>
+            <textarea name="sikayet" rows="4" required></textarea>
+
+            <input type="submit" value="Randevu Al">
+        </form>
+        <a href="/hasta_menu"><i class="fas fa-arrow-left"></i> Hasta Menüsüne Dön</a>
+    </div>
+</body>
+</html>

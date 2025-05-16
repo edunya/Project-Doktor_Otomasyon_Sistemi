@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg'); /* static klasöründe yer almalı */
+    background-size: 33%;
+    background-position: center;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.container {
+    background-color: lightgray;
+    padding: 40px;
+    border-radius: 15px;
+    border: 5px solid slategray;
+    box-shadow: 0px 0px 80px slategray;
+    z-index: 2;
+    color: slategray;
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: slategray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: slategray;
+    color: white;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-weight: bolder;
+}
+
+a[href="/hasta_menu"] {
+    display: inline-block;
+    margin-top: 25px;
+    color: slategray;
+    transition: all 0.3s ease;
+}
+
+a[href="/hasta_menu"]:hover {
+    font-weight: bolder;
+}
+
+a[href="/hasta_menu"] i {
+    margin-right: 5px;
+}

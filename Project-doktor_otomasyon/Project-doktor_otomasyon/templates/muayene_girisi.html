@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Muayene Girişi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='muayene_girisi.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-pen"></i> Muayene Girişi</h2>
+        <form action="/muayene_girisi" method="POST">
+            <label for="randevu_id">Randevu ID:</label>
+            <input type="number" id="randevu_id" name="randevu_id" required><br>
+
+            <label for="teshis">Teşhis:</label><br>
+            <textarea id="teshis" name="teshis" rows="2" cols="50" required></textarea><br>
+
+            <label for="ilac">İlaç:</label><br>
+            <textarea id="ilac" name="ilac" rows="2" cols="50" required></textarea><br>
+
+            <label for="notlar">Notlar:</label><br>
+            <textarea id="notlar" name="notlar" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="Kaydet">
+        </form>
+        <br>
+        <a href="/doktor_menu"><i class="fas fa-arrow-left"></i> Doktor Menüsüne Dön</a>
+    </div>
+</body>
+</html>

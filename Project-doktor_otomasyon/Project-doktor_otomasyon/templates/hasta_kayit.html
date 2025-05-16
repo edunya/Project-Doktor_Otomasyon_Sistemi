@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hasta Kayıt</title>
+    <link rel="stylesheet" href="/static/hasta_kayit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-file-signature"></i> Yeni Hasta Kaydı</h2>
+        <form action="/hasta_kayit" method="POST">
+            <label>Ad:
+                <input type="text" name="ad" required>
+            </label>
+            <label>Soyad:
+                <input type="text" name="soyad" required>
+            </label>
+            <label>TC:
+                <input type="text" name="tc" required>
+            </label>
+            <label>Telefon:
+                <input type="text" name="telefon" required>
+            </label>
+            <label>Doğum Tarihi:
+                <input type="date" name="dogum" required>
+            </label>
+            <label>Şifre:
+                <input type="password" name="sifre" required>
+            </label>
+            <input type="submit" value="Kaydet">
+        </form>
+        <a href="/ana_menu"><i class="fas fa-arrow-left"></i> Ana Menüye Dön</a>
+    </div>
+</body>
+</html>

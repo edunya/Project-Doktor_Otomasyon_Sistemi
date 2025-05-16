@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ana Menü</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ana_menu.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-clipboard-list"></i> DOKTOR - RANDEVU OTOMASYON SİSTEMİ</h2>
+        <h3>Hoşgeldiniz!</h3>
+        <h4>Lütfen talebinize göre ilgili seçeneği aşağıdaki listeden seçin.</h4>
+        <ul>
+            <li><a href="/hasta_kayit_sayfasi"><i class="fas fa-user-plus"></i><b> Hasta Kaydı</b></a></li>
+            <li><a href="/hasta_giris_sayfasi"><i class="fas fa-user-lock"></i><b> Hasta Girişi</b></a></li>
+            <li><a href="/doktor_giris_sayfasi"><i class="fas fa-user-md"></i><b> Doktor Girişi</b></a></li>
+            <li><a href="/hastalar"><i class="fas fa-file-medical"></i><b> Hasta Listesi</b></a></li>
+        </ul>
+    </div>
+</body>
+</html>

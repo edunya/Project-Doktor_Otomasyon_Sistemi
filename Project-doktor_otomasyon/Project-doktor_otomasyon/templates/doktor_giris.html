@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Doktor Giriş</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='doktor_giris.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-user-md"></i> Doktor Giriş</h2>
+        <form action="/doktor_giris" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sifre">Şifre:</label>
+            <input type="password" id="sifre" name="sifre" required>
+
+            <input type="submit" value="Giriş Yap">
+        </form>
+        <a href="/ana_menu"><i class="fas fa-arrow-left"></i> Ana Menüye Dön</a>
+    </div>
+</body>
+</html>

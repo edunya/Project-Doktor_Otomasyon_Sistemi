@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Muayene Geçmişim</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='muayene_gecmisi.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-stethoscope"></i> Muayene Geçmişim</h2>
+        <table>
+            <tr>
+                <th>Muayene ID</th>
+                <th>Tarih</th>
+                <th>Doktor</th>
+                <th>Teşhis</th>
+                <th>İlaç</th>
+                <th>Notlar</th>
+            </tr>
+            {% for m in muayeneler %}
+            <tr>
+                <td>{{ m.MuayeneID }}</td>
+                <td>{{ m.Tarih }}</td>
+                <td>{{ m.DoktorAd }} {{ m.DoktorSoyad }}</td>
+                <td>{{ m.Teshis }}</td>
+                <td>{{ m.Ilac }}</td>
+                <td>{{ m.Notlar }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/hasta_menu"><i class="fas fa-arrow-left"></i> Hasta Menüsüne Dön</a>
+    </div>
+</body>
+</html>
