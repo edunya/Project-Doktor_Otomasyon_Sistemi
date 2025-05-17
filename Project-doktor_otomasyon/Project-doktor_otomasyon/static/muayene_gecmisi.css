@@ -32,8 +32,8 @@ body::before {
     z-index: 2;
     color: slategray;
     text-align: center;
-    width: 90%;
-    max-width: 1000px;
+    width: 95%;
+    max-width: 1100px;
 }
 
 h2 {
@@ -48,10 +48,11 @@ table {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 0.95rem;
 }
 
 th, td {
-    padding: 12px;
+    padding: 10px 14px;
     border: 1px solid #ccc;
     text-align: center;
 }
@@ -62,26 +63,17 @@ th {
 }
 
 a {
-    color: #e74c3c;
+    color: slategray;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
-a[href="/doktor_menu"] {
-    display: inline-block;
-    margin-top: 25px;
-    color: slategray;
-    transition: all 0.3s ease;
-}
-
-a[href="/doktor_menu"]:hover {
-    font-weight: bolder;
-}
-
-a[href="/doktor_menu"] i {
-    margin-right: 5px;
+a[href="/hasta_menu"] i {
+    margin-right: 6px;
 }

@@ -71,17 +71,17 @@ a:hover {
     font-weight: bolder;
 }
 
-a[href="/doktor_menu"] {
+a[href="/hasta_menu"] {
     display: inline-block;
     margin-top: 25px;
     color: slategray;
     transition: all 0.3s ease;
 }
 
-a[href="/doktor_menu"]:hover {
+a[href="/hasta_menu"]:hover {
     font-weight: bolder;
 }
 
-a[href="/doktor_menu"] i {
+a[href="/hasta_menu"] i {
     margin-right: 5px;
 }

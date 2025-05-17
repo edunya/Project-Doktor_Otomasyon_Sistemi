@@ -32,8 +32,7 @@ body::before {
     z-index: 2;
     color: slategray;
     text-align: center;
-    width: 90%;
-    max-width: 1000px;
+    width: 400px;
 }
 
 h2 {
@@ -41,47 +40,51 @@ h2 {
     color: slategray;
 }
 
-table {
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select, input[type="datetime-local"], textarea {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
     width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-th, td {
+input[type="submit"] {
     padding: 12px;
-    border: 1px solid #ccc;
-    text-align: center;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-th {
-    background-color: slategray;
-    color: white;
+input[type="submit"]:hover {
+    background-color: #27ae60;
 }
 
 a {
-    color: #e74c3c;
     text-decoration: none;
+    color: slategray;
+    display: inline-block;
+    margin-top: 20px;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    font-weight: bolder;
+    font-weight: bold;
+    i {
+        font-weight: bold;
+    }
 }
 
-a[href="/doktor_menu"] {
-    display: inline-block;
-    margin-top: 25px;
+i {
+    margin-right: 5px;
     color: slategray;
     transition: all 0.3s ease;
-}
-
-a[href="/doktor_menu"]:hover {
-    font-weight: bolder;
-}
-
-a[href="/doktor_menu"] i {
-    margin-right: 5px;
 }
